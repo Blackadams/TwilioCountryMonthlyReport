@@ -40,6 +40,10 @@ with open("TwilioCallLog.csv", "w") as csvfile:
     # the file as we only want phone numbers.
     for call in client.calls.iter(page_size=1000,
                                   started_after=START_AFTER_DATE):
+                                      
+    for call in client.calls.iter(page_size=1000, 
+                                    started_after=START_AFTER_DATE, 
+                                    started_before=STOP_Date):
         if call.to.startswith("+"):
             writer.writerow([call.to.strip("+")])
         if call.from_.startswith("+"):
