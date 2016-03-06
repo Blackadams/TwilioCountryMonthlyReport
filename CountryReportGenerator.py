@@ -19,7 +19,7 @@ __credits__ = ["Mathew Jenkinson"]
 __license__ = "GPL"
 __version__ = "1"
 __maintainer__ = "Mathew Jenkinson"
-__status__ = "Prototype"
+__status__ = "Production"
 
 import datetime
 import csv
