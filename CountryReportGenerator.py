@@ -17,7 +17,7 @@ __author__ = "Mathew Jenkinson"
 __copyright__ = "Copyright 2016, Mathew Jenkinson"
 __credits__ = ["Mathew Jenkinson"]
 __license__ = "GPL"
-__version__ = "0.1"
+__version__ = "1"
 __maintainer__ = "Mathew Jenkinson"
 __status__ = "Prototype"
 
