@@ -33,7 +33,7 @@ AUTH = "" # Put your authToken here
 
 # Date Range input, we need to know what date range we are making this report for.
 From_Date_Input = "2016-02-01" # Example 1st Feb
-To_Date_Input = "2016-02-02" # Example 1st March - this will give us the month of Feb data
+To_Date_Input = "2016-03-01" # Example 1st March - this will give us the month of Feb data
 
 client = TwilioRestClient(ACCT, AUTH)
 lookupclient = TwilioLookupsClient(ACCT, AUTH)
@@ -55,7 +55,7 @@ with open("TwilioCallLog.csv", "w") as csvfile:
                     callCountryCode = number.country_code
                 except:
                     callCountryCode = "UNKNOWN"
-
+                    # UNKNOWN is generated when the lookup client is unable to determine any information on the number, this data is separate from your call log.
 
                 if call.price:
                     call_price = call.price.replace("-","")
