@@ -14,3 +14,4 @@ You will need to install / update the Twilio Python Library, to do this, please 
 
 pip install twilio
 
+Blog Post at: http://www.mathewjenkinson.com/twilio-country-monthly-report/
